@@ -285,7 +285,7 @@ update_homebrew_tap() {
 
                 # Update formula file
                 sed -i.bak \
-                    -e "s|archive/v[0-9]\+\.[0-9]\+\.[0-9]\+\.tar\.gz|archive/v${version}.tar.gz|g" \
+                    -e "s|archive/v[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*\.tar\.gz|archive/v${version}.tar.gz|g" \
                     -e "s|sha256 \"[^\"]*\"|sha256 \"${new_sha256}\"|g" \
                     "$formula_file"
 
