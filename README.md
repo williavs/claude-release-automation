@@ -67,6 +67,10 @@ This script is designed for Claude Code to automate releases. Simply drop it in 
 
 The script automatically detects the repository context and handles everything else.
 
+## Recent Fixes
+
+- **v1.0.1**: Fixed sed regex for Homebrew formula version updates (ensures URLs properly update from v1.0.2 → v1.0.4)
+
 ## License
 
 MIT - Use freely in any project!
